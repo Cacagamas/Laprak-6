@@ -1,0 +1,14 @@
+def factorial(num):
+    result = 1
+    for i in range(2, num + 1):
+        result *= i
+    return result
+
+def print_series(n):
+    for i in range(n, 0, -1):
+        factorial_i = factorial(i)
+        series_i = ' '.join(map(str, range(i, 0, -1)))
+        print(f"{factorial_i} {series_i}")
+
+n = int(input("Masukkan nilai n: "))
+print_series(n)
