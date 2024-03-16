@@ -1,0 +1,14 @@
+def tampilkan_deret(tinggi, lebar):
+    angka_awal = 1
+    for i in range(tinggi):
+        for j in range(lebar):
+            print(angka_awal, end=" ")
+            angka_awal += 1
+        print()
+
+# Input tinggi dan lebar
+tinggi = int(input("Masukkan tinggi deret: "))
+lebar = int(input("Masukkan lebar deret: "))
+
+# Memanggil fungsi untuk menampilkan deret
+tampilkan_deret(tinggi, lebar)
